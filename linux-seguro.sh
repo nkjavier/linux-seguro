@@ -78,22 +78,22 @@ aa5(){
  echo "Actualizando Anivirus"
  sudo systemctl stop clamav-freshclam.service
  sudo freshclam
- sudo systemctl start clamav-freshclam.servic
-                pause
+ sudo systemctl start clamav-freshclam.service
+ pause
 }
 
 aa6(){
 echo "Actualizando Rkhunter"
 echo "##############"
 sudo rkhunter --update
-                pause
+pause
 }
 
 aa7(){
 echo "Iniciando Scan desde / "
 sudo clamscan -r -i /
 echo "Terminado"
-                pause
+pause
 }
 
 
@@ -168,3 +168,4 @@ do
  show_menus
  read_options
 done
+
